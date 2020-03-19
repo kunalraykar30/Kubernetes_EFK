@@ -1,4 +1,4 @@
-# Kubernetes_EFK (EFK Stack for the K8s cluster)
+## Kubernetes_EFK (EFK Stack for the K8s cluster)
 Here, ElasticSearch (Storage)+ Fluentd (Logging Layer)+ Kibana (Visualization) will be used to store, aggregate & visualise logs.
 EFK is being popularly used for logging in K8s. 
 
