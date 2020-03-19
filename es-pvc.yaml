@@ -1,0 +1,13 @@
+# es-pvc.yaml to create pvc for ES
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-es
+  namespace: logging
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
