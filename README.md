@@ -14,3 +14,4 @@ This ns is dedicated to the logging environment. I have create here namespace us
 4) Create Statefulset of ES   
 5) Create Service for ES (Once the service is deployed you can do curl to the 9200 port of service - 10.101.181.175:9200/_cluster/health )
 
+
