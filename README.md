@@ -4,14 +4,17 @@ EFK is being popularly used for logging in K8s.
 
 > 1) Create namespace - logging. 
 This ns is dedicated to the logging environment. I have create here namespace using command, but in prod environment this should be created with yaml with resource limitation.
-#### kubectl create ns logging
+##### # kubectl create ns logging
 
-2) Create PV for the ES (Please note here peristent volumes are actually hostPath volumes. You need to use the actual volumes ) 
-# vi es-pvc.yaml 
-# kubectl create -f es-pvc.yaml 
+> 2) Create PV for the ES (Please note here peristent volumes are actually hostPath volumes. You need to use the actual volumes ) 
+##### # vi es-pv.yaml 
+##### # kubectl create -f es-pv.yaml 
 
-3) Create PVC for es
-4) Create Statefulset of ES   
-5) Create Service for ES (Once the service is deployed you can do curl to the 9200 port of service - 10.101.181.175:9200/_cluster/health )
+> 3) Create PVC for ES (Create PVC which will be bound to the PV)
+##### # vi es-pvc.yaml 
+##### # kubectl create -f es-pvc.yaml 
+
+> 4) Create Statefulset of ES   
+> 5) Create Service for ES (Once the service is deployed you can do curl to the 9200 port of service - 10.101.181.175:9200/_cluster/health )
 
 
