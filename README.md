@@ -2,7 +2,7 @@
 Here, ElasticSearch (Storage)+ Fluentd (Logging Layer)+ Kibana (Visualization) will be used to store, aggregate & visualise logs.
 EFK is being popularly used for logging in K8s. 
 
-Clone the repo and start creating the objecst. 
+Clone the repo and start creating the objects. 
 #### Please note, Helm charts are not used here.
 
 > 1) Create namespace - logging. 
