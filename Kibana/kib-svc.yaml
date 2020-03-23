@@ -1,0 +1,13 @@
+# kib-svc.yaml service created for the Kibana deployment
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: logging
+  labels:
+    app: kibana
+spec:
+  ports:
+  - port: 5601
+  selector:
+    app: kibana
