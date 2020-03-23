@@ -3,6 +3,7 @@ Here, ElasticSearch (Storage)+ Fluentd (Logging Layer)+ Kibana (Visualization) w
 EFK is being popularly used for logging in K8s. 
 
 Clone the repo and start creating the objects. 
+Following is the directory Structure of the Kubernetes_EFK
 #### Please note, Helm charts are not used here.
 
 > 1) Create namespace - logging. 
